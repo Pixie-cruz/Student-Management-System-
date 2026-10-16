@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attendance | Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="attendance">
+<div class="layout">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main">
+<header class="top"><button id="menuBtn" aria-label="Open menu">☰</button><h1>Attendance</h1><span class="date"></span></header>
+<section class="panel"><h2>Mark attendance</h2>
+<div class="tools"><input id="date" type="date" aria-label="Date"><select id="fc" aria-label="Course"></select><button class="btn alt" id="allPresent" type="button">Mark all present</button></div>
+<p id="sum"></p><div class="tw"><table><thead><tr><th>ID</th><th>Student</th><th>Course</th><th>Status</th></tr></thead><tbody id="tb"></tbody></table></div></section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student records | Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="students">
+<div class="layout">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main">
+<header class="top"><button id="menuBtn" aria-label="Open menu">☰</button><h1>Student records</h1><span class="date"></span></header>
+<section class="panel"><h2>Add or edit a student</h2>
+<form class="form" id="form">
+<label>Full name<input id="name" required></label>
+<label>Email<input id="email" type="email" required></label>
+<label>Course<select id="course"></select></label>
+<label>Year<select id="year"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+<label>Status<select id="status"><option>Active</option><option>Inactive</option></select></label>
+<div><button class="btn" id="saveBtn" type="submit">Add student</button> <button class="btn alt" id="cancel" type="button" hidden>Cancel</button></div>
+</form></section>
+<section class="panel"><h2>All students</h2>
+<div class="tools"><input id="q" type="search" placeholder="Search by name, ID, email or course"><select id="fs"><option value="">All statuses</option><option>Active</option><option>Inactive</option></select><span class="count" id="count"></span></div><div class="tw"><table><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Year</th><th>Status</th><th>Actions</th></tr></thead><tbody id="tb"></tbody></table></div></section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

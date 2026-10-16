@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses | Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="courses">
+<div class="layout">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main">
+<header class="top"><button id="menuBtn" aria-label="Open menu">☰</button><h1>Courses</h1><span class="date"></span></header>
+<section class="panel"><h2>Add a course</h2>
+<form class="form" id="form">
+<label>Course code<input id="code" placeholder="e.g. PHY130" required></label>
+<label>Course name<input id="cname" required></label>
+<label>Lecturer<input id="lect"></label>
+<label>Credits<input id="credits" type="number" min="1" max="10" value="3"></label>
+<div><button class="btn" type="submit">Add course</button></div>
+</form></section>
+<section class="panel"><h2>All courses</h2>
+<div class="tools"><input id="q" type="search" placeholder="Search courses or lecturers"></div><div class="tw"><table><thead><tr><th>Code</th><th>Course</th><th>Lecturer</th><th>Credits</th><th>Students</th><th>Actions</th></tr></thead><tbody id="tb"></tbody></table></div></section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

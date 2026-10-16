@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+<div class="layout">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main">
+<header class="top"><button id="menuBtn" aria-label="Open menu">☰</button><h1>Dashboard</h1><span class="date"></span></header>
+<section class="cards" id="stats"></section>
+<div class="grid2">
+<section class="panel"><h2>Recently added students</h2><div class="tw"><table><thead><tr><th>ID</th><th>Name</th><th>Course</th><th>Status</th></tr></thead><tbody id="recent"></tbody></table></div></section>
+<section class="panel"><h2>Students per course</h2><div id="bars"></div></section>
+</div>
+<section class="panel"><h2>Top exam results</h2><div class="tw"><table><thead><tr><th>Student</th><th>Course</th><th>Mark</th><th>Grade</th></tr></thead><tbody id="top"></tbody></table></div></section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

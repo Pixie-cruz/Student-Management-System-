@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examination results | Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="results">
+<div class="layout">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main">
+<header class="top"><button id="menuBtn" aria-label="Open menu">☰</button><h1>Examination results</h1><span class="date"></span></header>
+<section class="panel"><h2>Record a result</h2>
+<form class="form" id="form">
+<label>Student<select id="sid"></select></label>
+<label>Course<select id="rc"></select></label>
+<label>Mark (0-100)<input id="mark" type="number" min="0" max="100" required></label>
+<div><button class="btn" type="submit">Save result</button></div>
+</form></section>
+<section class="panel"><h2>All results</h2>
+<div class="tools"><input id="q" type="search" placeholder="Search by student or course"></div><div class="tw"><table><thead><tr><th>Student</th><th>Course</th><th>Mark</th><th>Grade</th><th>Actions</th></tr></thead><tbody id="tb"></tbody></table></div></section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
